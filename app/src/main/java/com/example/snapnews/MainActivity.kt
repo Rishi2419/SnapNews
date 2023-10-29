@@ -1,9 +1,12 @@
 package com.example.snapnews
 
 import android.content.ClipData.Item
+import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,6 +22,12 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val button = findViewById<ImageView>(R.id.circleai)
+
+        button.setOnClickListener{
+            startActivity(Intent(this,AIbot::class.java))
+            finish()
+        }
         var recyclerView=findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.layoutManager=LinearLayoutManager(this)
 

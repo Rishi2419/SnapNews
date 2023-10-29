@@ -26,6 +26,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="SnapNews"
         android:textColor="#FC3F5E"
         android:textSize="30sp"
