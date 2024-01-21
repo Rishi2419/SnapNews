@@ -23,12 +23,12 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
 
         android:background="#FC4E62"
         android:fontFamily="sans-serif-condensed-medium"
         android:padding="15dp"
-        android:paddingStart="75dp"
+        android:paddingStart="47dp"
         android:text="SnapNews"
         android:textAlignment="viewStart"
         android:textColor="@color/white"
@@ -37,23 +37,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"
+        app:layout_constraintVertical_bias="0.421"
         app:srcCompat="@drawable/img_1" />
-
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/circleai"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="28dp"
         android:src="@drawable/circleai"
@@ -62,14 +62,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+
         app:layout_constraintBottom_toBottomOf="@+id/circleai"
         app:layout_constraintEnd_toEndOf="@+id/circleai"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="@+id/circleai"
         app:layout_constraintTop_toTopOf="@+id/circleai"
-        app:srcCompat="@drawable/aibot" />
+        app:layout_constraintVertical_bias="0.685"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation" />
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageView3"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/circleai"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/circleai"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/circleai"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/circleai"-->
+<!--        app:srcCompat="@drawable/aibot" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

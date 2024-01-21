@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
 
         val button = findViewById<ImageView>(R.id.circleai)
 
+
         button.setOnClickListener{
             startActivity(Intent(this,AIbot::class.java))
             finish()

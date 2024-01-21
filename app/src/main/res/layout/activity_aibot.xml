@@ -23,13 +23,13 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
 
         android:background="#FC4E62"
         android:fontFamily="sans-serif-condensed-medium"
         android:padding="15dp"
-        android:paddingStart="75dp"
-        android:text=" AI Bot"
+        android:paddingStart="47dp"
+        android:text="AI Bot"
         android:textAlignment="viewStart"
         android:textColor="@color/white"
         android:textSize="25sp"
@@ -37,31 +37,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"
+        app:layout_constraintVertical_bias="0.421"
         app:srcCompat="@drawable/img_1" />
 
 
     <TextView
         android:id="@+id/dialog"
+        android:fontFamily="sans-serif-condensed-medium"
 
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
         android:background="@drawable/round"
         android:padding="7dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:layout_marginLeft="5dp"
         android:text="SnapNews"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.946"
